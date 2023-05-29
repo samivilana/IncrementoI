@@ -19,6 +19,14 @@ public class Cliente implements Serializable{
 	private String nombre;
 	@Column (name = "apellido")
 	private String apellido;
+	public Integer getId() {
+		return id;
+	}
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	@Column (name = "direccion")
 	private String direccion;
 	@Column(name = "cedula")
@@ -104,6 +112,7 @@ public class Cliente implements Serializable{
         }
         return true;
 	}
+	
 	
 	
 

@@ -1,15 +1,16 @@
 package Modelo;
+
 public class Ticket {
-    Producto producto;
+	Pedido pedido;
     Factura factura;
-    OrdenPedido orden;
-    public Ticket(Producto product, Factura factura, OrdenPedido pedido) {
-        this.producto = product;
+    OrdenPedidos Opedido;
+    public Ticket(Pedido pedido, Factura factura, OrdenPedidos Opedido) {
+        this.pedido = pedido;
         this.factura = factura;
-        this.orden = orden;
+        this.Opedido = Opedido;
     }
     public void generarDoc(){
         factura.emitirFactura();
-        orden.generarOrden();
+        Opedido.generarOrden();
     }
 }
